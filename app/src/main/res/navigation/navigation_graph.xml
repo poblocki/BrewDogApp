@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/navigation_graph"
+	app:startDestination="@+id/beer_list">
+
+	<action
+		android:id="@+id/action_beer_details"
+		app:destination="@id/beer_details" />
+
+	<fragment
+		android:id="@+id/beer_list"
+		android:name="com.poblocki.brewdogapp.presentation.list.BeerListFragment"
+		android:label="BeerListFragment"
+		tools:layout="@layout/fragment_list" />
+
+	<fragment
+		android:id="@+id/beer_details"
+		android:name="com.poblocki.brewdogapp.presentation.detail.BeerDetailsFragment"
+		android:label="BeerDetailsFragment"
+		tools:layout="@layout/fragment_details">
+		<argument
+			android:name="beerId"
+			app:argType="long" />
+	</fragment>
+</navigation>

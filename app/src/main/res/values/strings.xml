@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">BrewDogApp</string>
+	<string name="abv_format">ABV: %1$s</string>
+</resources>
