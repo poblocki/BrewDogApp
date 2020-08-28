@@ -8,7 +8,7 @@ The application displays information about beers on the paging list and detailed
 * Implemented according to Clean Architecture rules with Data,Domain and Presentation layers
 * Uses MVVM as the main architecture style
 * Uses Dagger2 as the dependency injection framework
-* Connects to Punk API for retrieving information about beers. 
+* Connects to Punk API for retrieving information about beers
 * Stores the received API response into Android Room database
 * Displays paging list of beer with the help of Android Paging library
 * Uses RxJava2 for managing the data flows
